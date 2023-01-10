@@ -15,7 +15,8 @@ more analysis can be found in SQL script
 .
 .
 .
-.
+raw data can be found in Sql file extention.
+
 .
 .
 .
