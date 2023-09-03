@@ -4,17 +4,10 @@
 
 - [Introduction](#introduction)
 - [Dataset Overview](#dataset-overview)
-- [SQL Queries](#sql-queries)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
 This GitHub repository contains an analysis of sales data for the PARCH & POSEY paper company. The analysis aims to provide insights into the company's sales performance, revenue channels, and sales representatives' achievements.
-
-## Dataset Overview
 
 ## Dataset Overview
 
