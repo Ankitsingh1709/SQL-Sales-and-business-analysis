@@ -16,53 +16,56 @@ This GitHub repository contains an analysis of sales data for the PARCH & POSEY 
 
 ## Dataset Overview
 
+## Dataset Overview
+
 The dataset consists of several tables:
 
 ### `Orders` Table
 
-- Description: Contains detailed information about sales orders, including quantity and total amounts.
-- Columns:
-  - `id`: Unique identifier for each order.
-  - `account_id`: Account identifier associated with the order.
-  - `occurred_at`: Date and time of the order.
-  - `standard_qty`: Quantity of standard paper sold.
-  - `gloss_qty`: Quantity of glossy paper sold.
-  - `poster_qty`: Quantity of poster paper sold.
-  - `total`: Total quantity of paper products sold.
-  - `standard_amt_usd`: Total amount (USD) for standard paper.
-  - `gloss_amt_usd`: Total amount (USD) for glossy paper.
-  - `poster_amt_usd`: Total amount (USD) for poster paper.
-  - `total_amt_usd`: Total amount (USD) for the order.
+| Column              | Description                              |
+|---------------------|------------------------------------------|
+| id                  | Unique identifier for each order.        |
+| account_id          | Account identifier associated with the order. |
+| occurred_at         | Date and time of the order.              |
+| standard_qty        | Quantity of standard paper sold.         |
+| gloss_qty           | Quantity of glossy paper sold.           |
+| poster_qty          | Quantity of poster paper sold.           |
+| total               | Total quantity of paper products sold.   |
+| standard_amt_usd    | Total amount (USD) for standard paper.    |
+| gloss_amt_usd       | Total amount (USD) for glossy paper.      |
+| poster_amt_usd      | Total amount (USD) for poster paper.      |
+| total_amt_usd       | Total amount (USD) for the order.        |
 
 ### `Region` Table
 
-- Description: Provides information about different regions in the USA.
-- Columns:
-  - `id`: Unique identifier for each region.
-  - `name`: Name of the region.
+| Column  | Description                      |
+|---------|----------------------------------|
+| id      | Unique identifier for each region. |
+| name    | Name of the region.              |
 
 ### `Sales_Reps` Table
 
-- Description: Lists the sales representatives with their associated region.
-- Columns:
-  - `id`: Unique identifier for each sales representative.
-  - `name`: Name of the sales representative.
-  - `region_id`: Identifier of the region to which the sales representative belongs.
+| Column      | Description                              |
+|-------------|------------------------------------------|
+| id          | Unique identifier for each sales representative. |
+| name        | Name of the sales representative.         |
+| region_id   | Identifier of the region to which the sales representative belongs. |
 
 ### `Web_Events` Table
 
-- Description: Contains records of web events and advertising channels.
-- Columns:
-  - `id`: Unique identifier for each web event.
-  - `account_id`: Account identifier associated with the web event.
-  - `occurred_at`: Date and time of the web event.
-  - `channel`: Advertising channel used for the web event.
+| Column       | Description                              |
+|--------------|------------------------------------------|
+| id           | Unique identifier for each web event.    |
+| account_id   | Account identifier associated with the web event. |
+| occurred_at  | Date and time of the web event.          |
+| channel      | Advertising channel used for the web event. |
 
 ### Some Key Information About the Data:
 
 - The company sells three types of paper: regular, poster, and glossy.
 - Clients primarily include large companies (e.g., 100 companies).
 - Advertising is done on Google, Facebook, and Twitter to attract clients.
+
 
 ## SQL Queries
 
