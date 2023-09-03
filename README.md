@@ -1,28 +1,72 @@
-# SQL-Sales-and-business-analysis
-**Some information about data:**
-This analysis is based on a paper company PARCH & POSEY which sell 3 types of paper, and have 50 sales representative spread across **USA** in 4 regions.
-the company sells 3 kinds of paper regular, poster, and glossy.
-the clients are primarily large 100 companies whom they attract by advertising on _Google_, _Facebook_, and _Twitter_.
+# PARCH & POSEY Paper Company Sales Analysis
 
-In my project, I have tried to answer a question like
-Which of their product is worst performing?
-Which of their marketing channels they should make a great investment in?
-Highest sales made in year month and sales rep associated with it?
-Who are the top customers? 
-more analysis can be found in the SQL script
-.
-.
-.
-.
-.
-raw data can be found in Sql file extention.
+## Table of Contents
 
-.
-.
-.
-.
-.
-.
-.
-.
+- [Introduction](#introduction)
+- [Dataset Overview](#dataset-overview)
+- [SQL Queries](#sql-queries)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
+## Introduction
+
+This GitHub repository contains an analysis of sales data for the PARCH & POSEY paper company. The analysis aims to provide insights into the company's sales performance, revenue channels, and sales representatives' achievements.
+
+## Dataset Overview
+
+The dataset consists of several tables:
+
+### `Orders` Table
+
+- Description: Contains detailed information about sales orders, including quantity and total amounts.
+- Columns:
+  - `id`: Unique identifier for each order.
+  - `account_id`: Account identifier associated with the order.
+  - `occurred_at`: Date and time of the order.
+  - `standard_qty`: Quantity of standard paper sold.
+  - `gloss_qty`: Quantity of glossy paper sold.
+  - `poster_qty`: Quantity of poster paper sold.
+  - `total`: Total quantity of paper products sold.
+  - `standard_amt_usd`: Total amount (USD) for standard paper.
+  - `gloss_amt_usd`: Total amount (USD) for glossy paper.
+  - `poster_amt_usd`: Total amount (USD) for poster paper.
+  - `total_amt_usd`: Total amount (USD) for the order.
+
+### `Region` Table
+
+- Description: Provides information about different regions in the USA.
+- Columns:
+  - `id`: Unique identifier for each region.
+  - `name`: Name of the region.
+
+### `Sales_Reps` Table
+
+- Description: Lists the sales representatives with their associated region.
+- Columns:
+  - `id`: Unique identifier for each sales representative.
+  - `name`: Name of the sales representative.
+  - `region_id`: Identifier of the region to which the sales representative belongs.
+
+### `Web_Events` Table
+
+- Description: Contains records of web events and advertising channels.
+- Columns:
+  - `id`: Unique identifier for each web event.
+  - `account_id`: Account identifier associated with the web event.
+  - `occurred_at`: Date and time of the web event.
+  - `channel`: Advertising channel used for the web event.
+
+### Some Key Information About the Data:
+
+- The company sells three types of paper: regular, poster, and glossy.
+- Clients primarily include large companies (e.g., 100 companies).
+- Advertising is done on Google, Facebook, and Twitter to attract clients.
+
+## SQL Queries
+
+
+[Optional: Add badges, links to your website, social media, or any other relevant information here.]
+
+For any questions or issues related to this repository, please create an [issue](#) or contact [your email address].
